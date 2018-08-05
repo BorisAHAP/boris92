@@ -10,6 +10,12 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
+
+    public function index()
+    {
+        return response()->json(Task::all(),200);
+
+    }
    public function createTask(){
        $status=Status::all();
        return view('tasks\create',['status'=>$status]);
