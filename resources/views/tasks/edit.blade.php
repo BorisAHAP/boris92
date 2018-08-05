@@ -8,11 +8,11 @@
         <div class="card-title">edit Task</div>
         <div class="form-group">
             <label class="form-label">Задача</label>
-            <input type="text" class="form-control" placeholder="Enter name" name="name" value="{{$task->title}}">
+            <input type="text" class="form-control" placeholder="Enter name" name="name" value="{{$task->title}}" required>
         </div>
         <div class="form-group">
             <label class="form-label">Описание</label>
-            <textarea name="description"  style="width:100%" col="30" >{{$task->description}}</textarea>
+            <textarea name="description"  style="width:100%" col="30" required>{{$task->description}}</textarea>
 
         </div>
         <div class="form-group">
